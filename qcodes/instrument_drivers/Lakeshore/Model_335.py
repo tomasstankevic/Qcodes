@@ -153,9 +153,9 @@ class Model_335(LakeshoreBase):
     def __init__(self, name: str, address: str, **kwargs) -> None:
         super().__init__(name, address, **kwargs)
 
-        self.visa_handle.baud_rate = 57600
-        self.visa_handle.data_bits = 7
-        self.visa_handle.parity = visa.constants.Parity(1)
+        #self.visa_handle.baud_rate = 57600
+        #self.visa_handle.data_bits = 7
+        #self.visa_handle.parity = visa.constants.Parity(1)
 
         self.output_1 = Output_335_CurrentSource(self, 'output_1', 1)
         self.output_2 = Output_335_VoltageSource(self, 'output_2', 2)
